@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import Image from "next/image";
 
-const socket = io(process.env.NEXT_PUBLIC_SOCKET_URL);
+const socket = io("https://wtk-backend-battle.onrender.com");
 
 export default function WTKFullUI() {
   const [players, setPlayers] = useState([]);
